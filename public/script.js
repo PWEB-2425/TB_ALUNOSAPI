@@ -23,6 +23,11 @@ async function listarAlunos() {
 
         let novoli = document.createElement("li");
         novoli.innerHTML = aluno.nome + " " + aluno.curso;
+        let novob = document.createElement("button");
+        novob.setAttribute("data-alunoid", aluno.id);
+        novob.innerHTML = "remover";
+        novob.addEventListener("click", apagarAluno);
+        novoli.appendChild(novob);
         ulalunos.appendChild(novoli);
     }
 }
@@ -44,3 +49,12 @@ async function criarAluno() {
 
 }
     
+async function apagarAluno(evento) {
+
+    const botaoclicado = evento.target;
+    const idaluno = botaoclicado.dataset.alunoid;
+    url = "http://localhost:3000/alunos/" + idaluno;
+    const resposta = await fetch(url, { method: "DELETE" });
+    listarAlunos();
+
+}
