@@ -1,0 +1,55 @@
+{
+  "alunos": [
+    {
+      "id": "1",
+      "nome": "maria",
+      "curso": 100
+    },
+    {
+      "id": "2",
+      "nome": "manuel",
+      "curso": 101
+    },
+    {
+      "nome": "Mariama Karama",
+      "id": "4",
+      "curso": 101,
+      "estado": "inscrito"
+    },
+    {
+      "id": "6ee6",
+      "nome": "rui",
+      "curso": 101
+    },
+    {
+      "id": "519f",
+      "nome": "helito",
+      "curso": "2"
+    },
+    {
+      "id": "3e05",
+      "nome": "diogo",
+      "curso": "4"
+    },
+    {
+      "id": "d2c6",
+      "nome": "gonçalo",
+      "curso": "1001"
+    },
+    {
+      "id": "4099",
+      "nome": "pauleta",
+      "curso": "1002"
+    }
+  ],
+  "cursos": [
+    {
+      "id": "100",
+      "nomeCurso": "Eng. Informática"
+    },
+    {
+      "id": "101",
+      "nomeCurso": "Eng. Redes e Sistemas de Computadores"
+    }
+  ]
+}
